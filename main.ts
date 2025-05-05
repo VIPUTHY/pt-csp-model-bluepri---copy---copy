@@ -11,6 +11,7 @@ function Levels () {
     }
     if (Level == 2) {
         tiles.setCurrentTilemap(tilemap`level2`)
+        tiles.placeOnTile(mySprite, tiles.getTileLocation(0, 0))
     }
 }
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
